@@ -9,7 +9,7 @@
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@300;400;500;600&family=Great+Vibes&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600&family=Great+Vibes&display=swap" rel="stylesheet" />
 
   <link rel="stylesheet" href="styles.css" />
 </head>
@@ -20,7 +20,7 @@
     <div class="container topbar__inner">
       <a class="brand" href="#top" aria-label="Go to top">
         <span class="brand__mark" aria-hidden="true">
-          <!-- minimal lotus emblem -->
+          <!-- lotus emblem -->
           <svg viewBox="0 0 64 64" class="lotus">
             <path d="M32 54c-10-3.5-17-10.7-17-19.2C15 23 24 16.7 32 9c8 7.7 17 14 17 25.8C49 43.3 42 50.5 32 54Z"/>
             <path d="M32 48c-7.1-2.6-12-7.8-12-13.8C20 25.2 26.2 20.6 32 16c5.8 4.6 12 9.2 12 18.2C44 40.2 39.1 45.4 32 48Z" class="lotus__inner"/>
@@ -31,6 +31,7 @@
 
       <nav class="nav" id="nav">
         <a href="#story">Our Story</a>
+        <a href="#poem">Poem</a>
         <a href="#events">Events</a>
         <a href="#venue">Venue</a>
         <a href="#rsvp">RSVP</a>
@@ -46,6 +47,7 @@
     <!-- Mobile drawer -->
     <div class="drawer" id="drawer" aria-hidden="true">
       <a href="#story">Our Story</a>
+      <a href="#poem">Poem</a>
       <a href="#events">Events</a>
       <a href="#venue">Venue</a>
       <a href="#rsvp">RSVP</a>
@@ -54,14 +56,15 @@
     </div>
   </header>
 
-  <!-- Hero -->
+  <!-- HERO -->
   <main>
     <section class="hero">
-      <div class="hero__orn hero__orn--left" aria-hidden="true"></div>
-      <div class="hero__orn hero__orn--right" aria-hidden="true"></div>
+      <!-- Subtle lotus ornaments (CSS + SVG) -->
+      <div class="hero__wash" aria-hidden="true"></div>
 
       <div class="container hero__grid">
         <div class="hero__left">
+          <!-- Added extra spacing above this line via CSS (per your request) -->
           <p class="kicker">With the love & blessings of our parents</p>
 
           <h1 class="hero__title">
@@ -71,8 +74,8 @@
           </h1>
 
           <p class="hero__sub">
-            invite you to celebrate a day of tradition, love, and new beginnings —
-            by the lake at <strong>Vinrich Lake Resort — Lakewood Chateau</strong>.
+            invite you to celebrate a day of tradition, love, and new beginnings — by the lake at
+            <strong>Vinrich Lake Resort — Lakewood Chateau</strong>.
           </p>
 
           <div class="hero__quick">
@@ -112,20 +115,25 @@
             </div>
 
             <div class="panel__body">
+              <!-- UPDATED: At a glance timings EXACTLY as you provided -->
               <div class="panel__card">
                 <h3 class="panel__title">At a glance</h3>
                 <div class="kv">
                   <div class="kv__row">
                     <span class="kv__k">Ceremony</span>
-                    <span class="kv__v">Poruwa (time TBA)</span>
+                    <span class="kv__v">Starts at 10.00 a.m.</span>
+                  </div>
+                  <div class="kv__row">
+                    <span class="kv__k">Poruwa Ceremony</span>
+                    <span class="kv__v">at 10.30 a.m.</span>
                   </div>
                   <div class="kv__row">
                     <span class="kv__k">Reception</span>
-                    <span class="kv__v">Evening celebration</span>
+                    <span class="kv__v">11.00 a.m.</span>
                   </div>
                   <div class="kv__row">
-                    <span class="kv__k">Dress code</span>
-                    <span class="kv__v">Classic / Traditional welcome</span>
+                    <span class="kv__k">Dress Code</span>
+                    <span class="kv__v">Traditional and Smart Casual — Be as stylish as you would like!</span>
                   </div>
                 </div>
 
@@ -135,19 +143,20 @@
                 </div>
               </div>
 
+              <!-- UPDATED: Quote text + centered -->
               <div class="panel__card panel__card--quote">
-                <p class="quote">
-                  “A celebration of tradition and love — and the people who shaped us.”
+                <p class="quote quote--center">
+                  “A Celebration of love and passion – with the amazing souls who shaped us”
                 </p>
-                <div class="sig">
+                <div class="sig sig--center">
                   <span class="sig__line"></span>
-                  <span class="sig__names">Saumi & Pasan</span>
+                  <span class="sig__names">— Saumi and Pasan —</span>
                   <span class="sig__line"></span>
                 </div>
               </div>
 
+              <!-- UPDATED: Keep Sinhala block, remove the phrase/title "Sinhala wording space" -->
               <div class="panel__card panel__card--sinhala">
-                <h3 class="panel__title">Sinhala wording space</h3>
                 <div class="sinhalaBox">
                   <p class="sinhalaBox__lead">ඔබගේ සිංහල ආරාධනා පද මෙහි එක් කරන්න…</p>
                   <p class="sinhalaBox__muted">(This space is intentionally roomy for your Sinhala version.)</p>
@@ -157,97 +166,196 @@
           </aside>
         </div>
       </div>
+
+      <!-- Section divider with lotus (adds “soul” without clutter) -->
+      <div class="dividerLotus" aria-hidden="true">
+        <span class="dividerLotus__line"></span>
+        <span class="dividerLotus__mark"></span>
+        <span class="dividerLotus__line"></span>
+      </div>
     </section>
 
-    <!-- Our Story -->
-    <section id="story" class="section">
+    <!-- OUR STORY -->
+    <section id="story" class="section section--story">
       <div class="container">
         <div class="section__head">
           <h2>Our Story</h2>
-          <p>
-            A simple journey, told with sincerity — rooted in respect, family values, and quiet certainty.
-          </p>
+          <!-- Removed the old subtitle exactly as requested -->
         </div>
 
-        <div class="timeline">
-          <article class="titem">
-            <div class="titem__dot" aria-hidden="true"></div>
-            <div class="titem__body">
-              <h3>How it began</h3>
+        <div class="storyGrid">
+          <article class="storyCard">
+            <h3>How it began</h3>
+
+            <div class="storyFlow">
               <p>
-                Replace this with your real story (2–4 short paragraphs). Keep it warm and genuine —
-                not overly dramatic. If you send me bullet points, I’ll rewrite it beautifully.
+                We met in the University — Saumi was two years younger than me, and I was her senior.
+                Instantly, we were attracted to each other; we knew the other was someone special.
+              </p>
+
+              <p>
+                From the moment we first met, sparks started to fly. We ate <strong>Pani poori</strong> and, despite
+                Saumi having a terrible cold, she enjoyed Orange juice, saying it’s vitamin C, it’s good for us.
+              </p>
+
+              <p>
+                That night I dropped her off. She glanced a longing look at me, and left — taking my heart permanently.
+              </p>
+
+              <p>
+                Then we started to have long glances at each other when passing in the corridor — smiles, blushes,
+                and endless chats in the evening.
+              </p>
+
+              <p>
+                And then, on the most beautiful day for a lover — <strong>14th of February</strong> — I asked her out.
+                Holding her hand, looking at her eyes, I nervously told her… asked…
+                <em>shall we embark on a journey together?</em>
+              </p>
+
+              <p class="storyYes">
+                And… She said <strong>Yes!</strong>
+              </p>
+
+              <p>
+                That was 06 years ago! 06 years, filled with laughter, cuddles, emotions, and passion…
+                A time filled with nothing but love, care, respect and admiration for one another!
+              </p>
+
+              <p>
+                Today, after a long journey, we have come to the mountaintop —
+                only to embark on another adventure.
               </p>
             </div>
           </article>
 
-          <article class="titem">
-            <div class="titem__dot" aria-hidden="true"></div>
-            <div class="titem__body">
-              <h3>The moment we knew</h3>
-              <p>
-                Add one meaningful memory — a calm turning point that felt “right”.
-              </p>
+          <aside class="storyAside">
+            <div class="asideCard">
+              <h3>What we want you to feel</h3>
+              <ul class="list">
+                <li>Welcomed, comfortable, and celebrated.</li>
+                <li>Guided clearly — timings, venue, RSVP options.</li>
+                <li>Surrounded by tradition, grace, and love.</li>
+              </ul>
             </div>
-          </article>
 
-          <article class="titem">
-            <div class="titem__dot" aria-hidden="true"></div>
-            <div class="titem__body">
-              <h3>Today</h3>
-              <p>
-                And now — we invite you to witness the next chapter, surrounded by the people we love most.
+            <div class="asideCard asideCard--lotus">
+              <h3>Blue Lotus</h3>
+              <p class="muted">
+                A quiet symbol of serenity, tradition, and the calm beauty of love —
+                reflected across the details of our celebration.
+              </p>
+              <div class="miniLotusRow" aria-hidden="true">
+                <span class="miniLotus"></span><span class="miniLotus"></span><span class="miniLotus"></span>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </div>
+
+      <div class="dividerLotus dividerLotus--tight" aria-hidden="true">
+        <span class="dividerLotus__line"></span>
+        <span class="dividerLotus__mark"></span>
+        <span class="dividerLotus__line"></span>
+      </div>
+    </section>
+
+    <!-- POEM -->
+    <section id="poem" class="section section--tint section--poem">
+      <div class="container">
+        <div class="section__head">
+          <h2>Poem</h2>
+          <p class="muted">A few lines, in quiet grace.</p>
+        </div>
+
+        <div class="poemWrap">
+          <div class="poemCard">
+            <p class="poemText">
+              Where the quiet waters meet the shore,<br/>
+              Two paths entwine, to wander no more.<br/>
+              From "you" and "me" to the strength of "we,"<br/>
+              A promise made for the world to see.<br/>
+              Rooted in values, in honor and grace,<br/>
+              We find our home in each other's embrace.<br/>
+              With quiet certainty and hearts so true,<br/>
+              We step into a life that is bright and new.<br/>
+              Beneath the sky, where the lake breeze blows,<br/>
+              Our story of love and tradition grows.<br/>
+              Hand in hand, as the journey begins,<br/>
+              The greatest of chapters is the one where love wins.
+            </p>
+
+            <div class="poemSig">
+              <span class="sig__line"></span>
+              <span class="sig__names">Saumi & Pasan</span>
+              <span class="sig__line"></span>
+            </div>
+          </div>
+
+          <div class="poemSide">
+            <div class="poemNote">
+              <h3>For our guests</h3>
+              <p class="muted">
+                Thank you for being part of our story — your presence is what makes this celebration truly complete.
               </p>
             </div>
-          </article>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- Events -->
-    <section id="events" class="section section--tint">
+    <!-- EVENTS -->
+    <section id="events" class="section">
       <div class="container">
         <div class="section__head">
           <h2>Wedding Events</h2>
-          <p>Timings can be updated later. The goal is clarity — so guests feel confident and welcomed.</p>
+          <p class="muted">A clear flow of the day — designed for comfort and confidence.</p>
         </div>
 
         <div class="cards3">
           <article class="card">
-            <h3>Poruwa Ceremony</h3>
-            <p class="meta">14 Feb 2026 • Time: TBA</p>
-            <p>Traditional ceremony by the lake, with an elegant and regal setting.</p>
+            <h3>Ceremony</h3>
+            <p class="meta">Starts at 10.00 a.m.</p>
+            <p>A calm beginning — with tradition, blessings, and the lake’s quiet serenity.</p>
             <div class="tags">
               <span class="tag">Traditional</span>
-              <span class="tag">By the lake</span>
+              <span class="tag">Blessings</span>
+            </div>
+          </article>
+
+          <article class="card">
+            <h3>Poruwa Ceremony</h3>
+            <p class="meta">10.30 a.m.</p>
+            <p>The most meaningful moment — rooted in values, grace, and Sri Lankan heritage.</p>
+            <div class="tags">
+              <span class="tag">Poruwa</span>
+              <span class="tag">Heritage</span>
             </div>
           </article>
 
           <article class="card">
             <h3>Reception</h3>
-            <p class="meta">14 Feb 2026 • Time: TBA</p>
-            <p>A refined celebration with close family & friends.</p>
+            <p class="meta">11.00 a.m.</p>
+            <p>A refined celebration with our loved ones — warm, welcoming, and joyful.</p>
             <div class="tags">
               <span class="tag">Elegant</span>
               <span class="tag">Welcoming</span>
             </div>
           </article>
+        </div>
 
-          <article class="card">
-            <h3>Kind Note</h3>
-            <p class="meta">Tradition & values</p>
-            <p>In keeping with our traditional values, alcohol will not be served.</p>
-            <div class="tags">
-              <span class="tag">Family</span>
-              <span class="tag">Traditional</span>
-            </div>
-          </article>
+        <div class="noticeCard">
+          <div class="noticeCard__icon" aria-hidden="true">✦</div>
+          <div class="noticeCard__body">
+            <h3>Kind note</h3>
+            <p class="muted">In keeping with our traditional values, alcohol will not be served.</p>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- Venue -->
-    <section id="venue" class="section">
+    <!-- VENUE -->
+    <section id="venue" class="section section--tint">
       <div class="container">
         <div class="section__head">
           <h2>Venue</h2>
@@ -258,7 +366,7 @@
           <div class="card card--pad">
             <h3>Address & Directions</h3>
             <p class="muted">
-              Add the full address here once finalised. You can also share a Google Maps pin and we’ll wire it in.
+              Add the full address here once finalised. You can paste a Google Maps pin and we’ll wire it in.
             </p>
 
             <div class="kv kv--spaced">
@@ -297,11 +405,11 @@
     </section>
 
     <!-- RSVP -->
-    <section id="rsvp" class="section section--tint">
+    <section id="rsvp" class="section">
       <div class="container">
         <div class="section__head">
           <h2>RSVP</h2>
-          <p>Choose the method that’s easiest — a smooth RSVP helps us welcome you better.</p>
+          <p class="muted">Choose the easiest method — a smooth RSVP helps us welcome you better.</p>
         </div>
 
         <div class="grid2">
@@ -343,16 +451,16 @@
       </div>
     </section>
 
-    <!-- Gallery -->
-    <section id="gallery" class="section">
+    <!-- GALLERY -->
+    <section id="gallery" class="section section--tint">
       <div class="container">
         <div class="section__head">
           <h2>Gallery</h2>
-          <p>A few beautiful frames — calm, elegant, and timeless.</p>
+          <p class="muted">A few beautiful frames — calm, elegant, and timeless.</p>
         </div>
 
         <div class="gallery">
-          <!-- Replace these with real images later (see script.js notes) -->
+          <!-- Replace these with your real photos later -->
           <button class="gitem" data-full="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?auto=format&fit=crop&w=1600&q=80" aria-label="Open photo 1">
             <img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?auto=format&fit=crop&w=900&q=80" alt="Gallery photo 1" />
           </button>
@@ -373,11 +481,11 @@
     </section>
 
     <!-- FAQ -->
-    <section id="faq" class="section section--tint">
+    <section id="faq" class="section">
       <div class="container">
         <div class="section__head">
           <h2>FAQ</h2>
-          <p>Quick answers so guests feel comfortable and well guided.</p>
+          <p class="muted">Quick answers so guests feel comfortable and well guided.</p>
         </div>
 
         <div class="faq">
@@ -388,7 +496,7 @@
 
           <details class="faq__item">
             <summary>Is there a dress code?</summary>
-            <p>Classic attire is perfect. Traditional Sri Lankan attire is warmly welcomed.</p>
+            <p>Traditional and Smart Casual — be as stylish as you would like!</p>
           </details>
 
           <details class="faq__item">
@@ -404,7 +512,7 @@
       </div>
     </section>
 
-    <!-- Footer -->
+    <!-- FOOTER -->
     <footer class="footer">
       <div class="container footer__inner">
         <div class="footer__left">
