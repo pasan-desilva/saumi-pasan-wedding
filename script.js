@@ -6,15 +6,15 @@
 const GOOGLE_FORM_URL = "https://forms.gle/PASTE_YOUR_FORM_LINK_HERE";
 const WHATSAPP_NUMBER_E164 = "94XXXXXXXXX"; // TODO: replace later
 
-// Optional: pre-filled WhatsApp message (edit freely)
-const WHATSAPP_PREFILL = "Hello Saumi & Pasan, I’d like to RSVP for the wedding. My name is ___ and number of guests is ___.";
+// Pre-filled WhatsApp message
+const WHATSAPP_PREFILL =
+  "Hello Saumi & Pasan, I’d like to RSVP for the wedding. My name is ___ and number of guests is ___.";
 
-// Wedding date for countdown (local time)
+// Wedding date for countdown (Sri Lanka time)
 const WEDDING_ISO = "2026-02-14T00:00:00+05:30";
 
 function buildWhatsAppLink(numberE164, text) {
   const encoded = encodeURIComponent(text);
-  // Works on mobile + desktop (WhatsApp will route appropriately)
   return `https://wa.me/${numberE164}?text=${encoded}`;
 }
 
@@ -23,7 +23,7 @@ function setHref(id, url) {
   if (el) el.setAttribute("href", url);
 }
 
-// Mobile menu
+/* Mobile menu */
 const navBtn = document.getElementById("navbtn");
 const drawer = document.getElementById("drawer");
 
@@ -43,7 +43,7 @@ if (navBtn && drawer) {
   });
 }
 
-// Wire RSVP links
+/* Wire RSVP links */
 setHref("googleFormBtn", GOOGLE_FORM_URL);
 
 const waLink = buildWhatsAppLink(WHATSAPP_NUMBER_E164, WHATSAPP_PREFILL);
@@ -51,7 +51,7 @@ setHref("waHeroBtn", waLink);
 setHref("waPanelBtn", waLink);
 setHref("waRsvpBtn", waLink);
 
-// Copy helpers
+/* Copy helpers */
 const copyVenueBtn = document.getElementById("copyVenue");
 if (copyVenueBtn) {
   copyVenueBtn.addEventListener("click", async () => {
@@ -84,7 +84,7 @@ if (copyRsvpBtn) {
   });
 }
 
-// Countdown
+/* Countdown */
 const countdownEl = document.getElementById("countdown");
 function updateCountdown() {
   if (!countdownEl) return;
@@ -113,7 +113,7 @@ function updateCountdown() {
 updateCountdown();
 setInterval(updateCountdown, 30 * 1000);
 
-// Gallery lightbox
+/* Gallery lightbox */
 const lightbox = document.getElementById("lightbox");
 const lbImg = document.getElementById("lbImg");
 const lbCap = document.getElementById("lbCap");
