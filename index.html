@@ -1,578 +1,460 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <title>Saumi & Pasan | Wedding Celebration</title>
-  <meta name="description" content="Saumi & Pasan invite you to celebrate our special day." />
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <!-- Elegant serif + a single script for highlights only -->
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&family=Great+Vibes&display=swap" rel="stylesheet">
-
+  <title>Saumi & Pasan | Wedding Day</title>
+  <meta name="description" content="Saumi & Pasan Wedding — Seating chart, venue, and wedding day details." />
   <link rel="stylesheet" href="styles.css" />
-</head>
 
+  <!-- Fonts (kept elegant + readable) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
 <body>
-  <!-- HEADER -->
-  <header class="site-header" id="top">
-    <div class="container header-inner">
-      <a class="brand" href="#top" aria-label="Go to top">
+
+  <!-- Top Bar -->
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <a class="brand" href="#home" aria-label="Go to top">
         <span class="brand-mark" aria-hidden="true">
-          <!-- Lotus icon (inline SVG; no extra file needed) -->
-          <svg width="34" height="34" viewBox="0 0 64 64" role="img" aria-label="Lotus icon">
-            <defs>
-              <linearGradient id="lg1" x1="0" y1="0" x2="1" y2="1">
-                <stop offset="0" stop-color="#46018A"/>
-                <stop offset="1" stop-color="#DAB000"/>
-              </linearGradient>
-            </defs>
-            <circle cx="32" cy="32" r="29" fill="none" stroke="rgba(70,1,138,.20)" stroke-width="2"/>
-            <path d="M32 14c-5 7-8 13-8 18 0 6 4 10 8 10s8-4 8-10c0-5-3-11-8-18z" fill="url(#lg1)"/>
-            <path d="M20 34c2 9 7 16 12 16-6-5-8-10-12-16z" fill="rgba(70,1,138,.55)"/>
-            <path d="M44 34c-4 6-6 11-12 16 5 0 10-7 12-16z" fill="rgba(218,176,0,.55)"/>
+          <!-- Simple lotus mark (inline SVG, theme-safe) -->
+          <svg width="28" height="28" viewBox="0 0 64 64" role="img" aria-label="Lotus">
+            <path d="M32 7c6 9 9 17 9 24 0 6-4 11-9 11s-9-5-9-11c0-7 3-15 9-24Z" fill="#DAB000"/>
+            <path d="M32 12c4 7 6 13 6 19 0 4-3 8-6 8s-6-4-6-8c0-6 2-12 6-19Z" fill="#46018A"/>
+            <circle cx="32" cy="48" r="3" fill="#DAB000"/>
           </svg>
         </span>
         <span class="brand-text">Saumi &amp; Pasan</span>
       </a>
 
       <nav class="nav-desktop" aria-label="Primary navigation">
-        <a href="#story">Our Story</a>
+        <a href="#home">Home</a>
+        <a href="#seating">Seating Chart</a>
+        <a href="#moments">Share Moments</a>
         <a href="#events">Events</a>
         <a href="#venue">Venue</a>
-        <a href="#rsvp">RSVP</a>
         <a href="#gallery">Gallery</a>
+        <a href="#story">Our Story</a>
         <a href="#faq">FAQ</a>
       </nav>
 
-      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
-        <span class="nav-toggle-bars" aria-hidden="true"></span>
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
       </button>
     </div>
 
-    <!-- Mobile menu -->
-    <nav class="nav-mobile" id="navMobile" aria-label="Mobile navigation">
-      <a href="#story" class="nav-link">Our Story</a>
-      <a href="#events" class="nav-link">Events</a>
-      <a href="#venue" class="nav-link">Venue</a>
-      <a href="#rsvp" class="nav-link">RSVP</a>
-      <a href="#gallery" class="nav-link">Gallery</a>
-      <a href="#faq" class="nav-link">FAQ</a>
+    <nav class="nav-mobile" aria-label="Mobile navigation">
+      <a href="#home">Home</a>
+      <a href="#seating">Seating Chart</a>
+      <a href="#moments">Share Moments</a>
+      <a href="#events">Events</a>
+      <a href="#venue">Venue</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#story">Our Story</a>
+      <a href="#faq">FAQ</a>
     </nav>
   </header>
 
-  <!-- HERO -->
-  <main>
-    <section class="hero">
-      <div class="container hero-grid">
-        <div class="hero-left">
-          <p class="hero-pre">WITH THE LOVE &amp; BLESSINGS OF OUR PARENTS</p>
+  <!-- Hero -->
+  <section id="home" class="hero">
+    <div class="hero-bg"></div>
 
-          <h1 class="hero-title">
-            <span class="hero-name hero-name-script">Saumi</span>
-            <span class="hero-amp">&amp;</span>
-            <span class="hero-name hero-name-script hero-name-purple">Pasan</span>
-          </h1>
+    <div class="container hero-inner">
+      <div class="hero-left">
+        <p class="kicker">WITH THE LOVE &amp; BLESSINGS OF OUR PARENTS</p>
 
-          <p class="hero-sub">
-            invite you to celebrate our special day, filled with love, laughter and happiness.
-          </p>
+        <h1 class="hero-title">
+          <span class="hero-name hero-name-purple">Saumi</span>
+          <span class="amp">&amp;</span>
+          <span class="hero-name">Pasan</span>
+        </h1>
 
-          <div class="hero-meta">
-            <div class="meta-row">
-              <span class="meta-label">Date</span>
-              <span class="meta-value">14 February 2026</span>
-            </div>
-            <div class="meta-row">
-              <span class="meta-label">Venue</span>
-              <span class="meta-value">Vinrich Lake Resort — Lakewood Chateau</span>
-            </div>
-          </div>
-
-          <div class="hero-actions">
-            <button class="btn btn-primary" data-scroll="#rsvp">RSVP</button>
-
-            <!-- WhatsApp Us: per your request, do NOT open WhatsApp here; scroll to RSVP -->
-            <button class="btn btn-whatsapp" data-scroll="#rsvp">WhatsApp Us</button>
-
-            <button class="btn btn-ghost" data-scroll="#venue">View Location</button>
-          </div>
-
-          <div class="countdown-wrap">
-            <div class="countdown" aria-label="Countdown to wedding">
-              <span class="countdown-label">COUNTDOWN</span>
-              <span class="countdown-value" id="countdownMain">—</span>
-            </div>
-            <div class="countdown-secondary" aria-label="Secondary countdown">
-              <span class="countdown-secondary-label">WEEKS TO GO</span>
-              <span class="countdown-secondary-value" id="countdownWeeks">—</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="hero-right">
-          <div class="card card-elevated">
-            <div class="card-topline">
-              <span>WEDDING CELEBRATION</span>
-              <span class="muted">14 • 02 • 2026</span>
-            </div>
-
-            <div class="card-body">
-              <h2 class="card-title">At a glance</h2>
-
-              <p class="day-begins">Our special day begins at 10.00 a.m.</p>
-
-              <dl class="glance">
-                <div class="glance-row">
-                  <dt>Ceremony</dt>
-                  <dd>Starts at 10.00 a.m.</dd>
-                </div>
-                <div class="glance-row">
-                  <dt>Poruwa Ceremony</dt>
-                  <dd>At 10.30 a.m.</dd>
-                </div>
-                <div class="glance-row">
-                  <dt>Reception</dt>
-                  <dd>From 11.00 a.m. onwards</dd>
-                </div>
-                <div class="glance-row">
-                  <dt>Dress Code</dt>
-                  <dd> Any party attire is welcome, and we would love to see you shining!</dd>
-                </div>
-              </dl>
-
-              <p class="tradition-note">
-                In keeping with our traditional values, alcohol will not be served.
-              </p>
-
-              <div class="quote-box">
-                <p class="quote">
-                  “A Celebration of love and passion with the amazing souls who shaped us”
-                </p>
-                <p class="quote-sign">— Saumi and Pasan —</p>
-              </div>
-
-              <!-- Invitation card image block (replaces Sinhala placeholder text) -->
-              <div class="invite-image-block" aria-label="Invitation card">
-                <img src="assets/images/invitation/invitation.jpg" alt="Wedding invitation card" loading="lazy">
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- SECTION DIVIDER -->
-    <div class="section-divider" aria-hidden="true">
-      <span class="divider-line"></span>
-      <span class="divider-lotus">
-        <svg width="26" height="26" viewBox="0 0 64 64">
-          <defs>
-            <linearGradient id="lg2" x1="0" y1="0" x2="1" y2="1">
-              <stop offset="0" stop-color="#46018A"/>
-              <stop offset="1" stop-color="#DAB000"/>
-            </linearGradient>
-          </defs>
-          <path d="M32 14c-5 7-8 13-8 18 0 6 4 10 8 10s8-4 8-10c0-5-3-11-8-18z" fill="url(#lg2)"/>
-          <path d="M18 36c4 10 11 16 14 16-6-5-10-10-14-16z" fill="rgba(70,1,138,.45)"/>
-          <path d="M46 36c-4 6-8 11-14 16 3 0 10-6 14-16z" fill="rgba(218,176,0,.45)"/>
-        </svg>
-      </span>
-      <span class="divider-line"></span>
-    </div>
-
-    <!-- OUR STORY -->
-    <section class="section" id="story">
-      <div class="container">
-        <header class="section-header">
-          <h2>Our Story</h2>
-        </header>
-
-        <article class="story-card">
-          <h3 class="story-subhead">How it began</h3>
-
-          <p>
-            We met at the university. Saumi was two years younger, and I was her senior.
-            From the very first moment, there was something quietly unmistakable between us.
-            Nothing was spoken aloud, but somehow, we both knew the other was someone special.
-          </p>
-
-          <p>
-            That first evening stays with us fondly. We shared pani poori, laughed easily,
-            and despite having a terrible cold, Saumi insisted on having orange juice, smiling and saying
-            it was vitamin C and that it would be good for us. Later that night, as I dropped her off,
-            she turned back and looked at me just for a moment. In that moment, without either of us realizing it,
-            something changed. She walked away carrying my heart with her.
-          </p>
-
-          <p>
-            After that, it was always in the little things. Long glances when we passed each other in the corridors.
-            Quiet smiles. Gentle blushes. Evenings filled with conversations that seemed to stretch endlessly,
-            where time slipped by without notice.
-          </p>
-
-          <div class="story-highlight" role="note" aria-label="Special moment">
-            And… she said yes.
-          </div>
-
-          <p>
-            The 14th of February remains one of our most treasured days. Nervous and hopeful, I held her hand,
-            looked into her eyes, and asked if we could embark on this journey together.
-            She smiled, paused for just a heartbeat, and said yes.
-          </p>
-
-          <p>
-            Years have passed since then. Years filled with laughter and comfort, growth and understanding,
-            tenderness and passion. Years of choosing each other every single day with care, respect, and deep admiration.
-            Today, after a journey that has shaped us quietly and deeply, we stand together ready to begin a new chapter.
-            One rooted in love, values, and a shared sense of home.
-          </p>
-        </article>
-      </div>
-    </section>
-
-    <!-- DIVIDER -->
-    <div class="section-divider" aria-hidden="true">
-      <span class="divider-line"></span>
-      <span class="divider-lotus">
-        <svg width="26" height="26" viewBox="0 0 64 64">
-          <defs>
-            <linearGradient id="lg3" x1="0" y1="0" x2="1" y2="1">
-              <stop offset="0" stop-color="#46018A"/>
-              <stop offset="1" stop-color="#DAB000"/>
-            </linearGradient>
-          </defs>
-          <path d="M32 14c-5 7-8 13-8 18 0 6 4 10 8 10s8-4 8-10c0-5-3-11-8-18z" fill="url(#lg3)"/>
-          <path d="M18 36c4 10 11 16 14 16-6-5-10-10-14-16z" fill="rgba(70,1,138,.45)"/>
-          <path d="M46 36c-4 6-8 11-14 16 3 0 10-6 14-16z" fill="rgba(218,176,0,.45)"/>
-        </svg>
-      </span>
-      <span class="divider-line"></span>
-    </div>
-
-    <!-- EVENTS -->
-    <section class="section" id="events">
-      <div class="container">
-        <header class="section-header">
-          <h2>Wedding Events</h2>
-        </header>
-
-        <!-- For our guests: centered, not boxed -->
-        <div class="for-guests">
-          <p class="for-guests-title">For our guests</p>
-          <p class="for-guests-text">
-            Thank you for being part of our story. Your presence is what makes this celebration truly complete.
-          </p>
-        </div>
-
-        <div class="event-grid">
-          <article class="event-card">
-            <h3>Our Wedding Ceremony</h3>
-            <p class="event-time">Starts at 10.00 a.m.</p>
-            <p class="event-desc">
-              A calm beginning with tradition, blessings, and the lake’s quiet serenity.
-            </p>
-            <div class="tags">
-              <span class="tag">Traditional</span>
-              <span class="tag">Blessings</span>
-            </div>
-          </article>
-
-          <article class="event-card">
-            <h3>Poruwa Ceremony</h3>
-            <p class="event-time">10.30 a.m.</p>
-            <p class="event-desc">
-              The most meaningful moment rooted in values, grace, and Sri Lankan heritage.
-            </p>
-            <div class="tags">
-              <span class="tag">Poruwa</span>
-              <span class="tag">Heritage</span>
-            </div>
-          </article>
-
-          <article class="event-card">
-            <h3>Wedding Reception</h3>
-            <p class="event-time">From 11.00 a.m. onwards</p>
-            <p class="event-desc">
-              A refined celebration with our loved ones, warm, welcoming, and joyful.
-            </p>
-            <div class="tags">
-              <span class="tag">Elegant</span>
-              <span class="tag">Welcoming</span>
-            </div>
-          </article>
-
-          <article class="event-card">
-            <h3>Lunch</h3>
-            <p class="event-time">01.00 p.m.</p>
-            <div class="tags">
-              <span class="tag">Lunch</span>
-              <span class="tag">Together</span>
-            </div>
-          </article>
-
-          <article class="event-card">
-            <h3>Going away</h3>
-            <p class="event-time">03.30 p.m.</p>
-            <div class="tags">
-              <span class="tag">Farewell</span>
-              <span class="tag">Blessings</span>
-            </div>
-          </article>
-        </div>
-
-        <div class="activities">
-          <h3 class="activities-title">Highlights to enjoy</h3>
-          <ul class="activities-list">
-            <li>Dance and celebrate with family and friends</li>
-            <li>360 photo booth moments</li>
-            <li>Instant photo print facilities</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <!-- DIVIDER -->
-    <div class="section-divider" aria-hidden="true">
-      <span class="divider-line"></span>
-      <span class="divider-lotus">
-        <svg width="26" height="26" viewBox="0 0 64 64">
-          <defs>
-            <linearGradient id="lg4" x1="0" y1="0" x2="1" y2="1">
-              <stop offset="0" stop-color="#46018A"/>
-              <stop offset="1" stop-color="#DAB000"/>
-            </linearGradient>
-          </defs>
-          <path d="M32 14c-5 7-8 13-8 18 0 6 4 10 8 10s8-4 8-10c0-5-3-11-8-18z" fill="url(#lg4)"/>
-          <path d="M18 36c4 10 11 16 14 16-6-5-10-10-14-16z" fill="rgba(70,1,138,.45)"/>
-          <path d="M46 36c-4 6-8 11-14 16 3 0 10-6 14-16z" fill="rgba(218,176,0,.45)"/>
-        </svg>
-      </span>
-      <span class="divider-line"></span>
-    </div>
-
-    <!-- VENUE -->
-    <section class="section" id="venue">
-      <div class="container">
-        <header class="section-header">
-          <h2>Venue</h2>
-        </header>
-
-        <div class="venue-card">
-          <div class="venue-left">
-            <h3>Address &amp; Directions</h3>
-            <p class="venue-address">
-              No 18/3, Duwawatta Road,<br/>
-              Piliyandala 10300
-            </p>
-
-            <div class="venue-actions">
-              <a class="btn btn-primary" href="https://maps.app.goo.gl/bNsy69jnHx4APUuS9" target="_blank" rel="noopener">
-                Open Google Maps
-              </a>
-            </div>
-          </div>
-
-          <div class="venue-right">
-            <iframe
-              class="venue-map"
-              title="Google Maps location"
-              loading="lazy"
-              allowfullscreen
-              referrerpolicy="no-referrer-when-downgrade"
-              src="https://www.google.com/maps?q=Vinrich%20Lake%20Resort%20Lakewood%20Chateau&output=embed">
-            </iframe>
-            <p class="venue-note">
-              Tip: If the embedded map shows a generic view, use the “Open Google Maps” button for the exact pin.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- DIVIDER -->
-    <div class="section-divider" aria-hidden="true">
-      <span class="divider-line"></span>
-      <span class="divider-lotus">
-        <svg width="26" height="26" viewBox="0 0 64 64">
-          <defs>
-            <linearGradient id="lg5" x1="0" y1="0" x2="1" y2="1">
-              <stop offset="0" stop-color="#46018A"/>
-              <stop offset="1" stop-color="#DAB000"/>
-            </linearGradient>
-          </defs>
-          <path d="M32 14c-5 7-8 13-8 18 0 6 4 10 8 10s8-4 8-10c0-5-3-11-8-18z" fill="url(#lg5)"/>
-          <path d="M18 36c4 10 11 16 14 16-6-5-10-10-14-16z" fill="rgba(70,1,138,.45)"/>
-          <path d="M46 36c-4 6-8 11-14 16 3 0 10-6 14-16z" fill="rgba(218,176,0,.45)"/>
-        </svg>
-      </span>
-      <span class="divider-line"></span>
-    </div>
-
-    <!-- RSVP -->
-    <section class="section" id="rsvp">
-      <div class="container">
-        <header class="section-header">
-          <h2>RSVP</h2>
-        </header>
-
-        <div class="rsvp-grid">
-          <article class="rsvp-card">
-            <h3>RSVP via Google Form</h3>
-            <p class="muted">
-              This RSVP is regrets only.
-            </p>
-
-            <button class="btn btn-primary" id="openFormBtn">
-              RSVP – Regrets Only
-            </button>
-
-            <div class="form-embed" id="formEmbed" hidden>
-              <iframe
-                title="RSVP Form"
-                src="https://forms.gle/FABGqM6Cqvyc5wBQ8"
-                loading="lazy">
-              </iframe>
-            </div>
-          </article>
-
-          <article class="rsvp-card">
-            <h3>RSVP via WhatsApp</h3>
-            <p class="muted">Regrets only message will be prepared for you.</p>
-
-            <div class="wa-grid">
-              <a class="btn btn-whatsapp-solid" id="waSaumi" href="#" target="_blank" rel="noopener">
-                WhatsApp – Saumi
-              </a>
-              <a class="btn btn-whatsapp-solid" id="waPasan" href="#" target="_blank" rel="noopener">
-                WhatsApp – Pasan
-              </a>
-            </div>
-
-            <p class="tiny">
-              If WhatsApp Web is available on your device, it will open directly.
-            </p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- DIVIDER -->
-    <div class="section-divider" aria-hidden="true">
-      <span class="divider-line"></span>
-      <span class="divider-lotus">
-        <svg width="26" height="26" viewBox="0 0 64 64">
-          <defs>
-            <linearGradient id="lg6" x1="0" y1="0" x2="1" y2="1">
-              <stop offset="0" stop-color="#46018A"/>
-              <stop offset="1" stop-color="#DAB000"/>
-            </linearGradient>
-          </defs>
-          <path d="M32 14c-5 7-8 13-8 18 0 6 4 10 8 10s8-4 8-10c0-5-3-11-8-18z" fill="url(#lg6)"/>
-          <path d="M18 36c4 10 11 16 14 16-6-5-10-10-14-16z" fill="rgba(70,1,138,.45)"/>
-          <path d="M46 36c-4 6-8 11-14 16 3 0 10-6 14-16z" fill="rgba(218,176,0,.45)"/>
-        </svg>
-      </span>
-      <span class="divider-line"></span>
-    </div>
-
-    <!-- GALLERY -->
-    <section class="section" id="gallery">
-      <div class="container">
-        <header class="section-header">
-          <h2>Gallery</h2>
-        </header>
-
-        <p class="section-lead">
-          Beautiful clicks from our wedding will be updated in this section...
+        <p class="hero-subtitle">
+          Today, we celebrate love, laughter, and the beginning of our forever.
         </p>
 
-        <div class="gallery-grid">
-          <figure class="gallery-item">
-            <img src="assets/images/gallery/gallery-01.jpg" alt="Saumi and Pasan photo 1" loading="lazy">
-          </figure>
-          <figure class="gallery-item">
-            <img src="assets/images/gallery/gallery-02.jpg" alt="Saumi and Pasan photo 2" loading="lazy">
-          </figure>
-          <figure class="gallery-item">
-            <img src="assets/images/gallery/gallery-03.jpg" alt="Saumi and Pasan photo 3" loading="lazy">
-          </figure>
-          <figure class="gallery-item">
-            <img src="assets/images/gallery/gallery-04.jpg" alt="Saumi and Pasan photo 4" loading="lazy">
-          </figure>
+        <div class="pill-grid">
+          <div class="pill">
+            <span class="pill-label">Date</span>
+            <span class="pill-value">14 February 2026</span>
+          </div>
+          <div class="pill">
+            <span class="pill-label">Venue</span>
+            <span class="pill-value">Vinrich Lake Resort — Lakewood Chateau</span>
+          </div>
+        </div>
+
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#seating">View Seating Chart</a>
+          <a class="btn btn-ghost" href="#moments">Upload Photos</a>
+          <a class="btn btn-ghost" href="https://maps.app.goo.gl/bNsy69jnHx4APUuS9" target="_blank" rel="noopener">Open Google Maps</a>
         </div>
       </div>
-    </section>
 
-    <!-- DIVIDER -->
-    <div class="section-divider" aria-hidden="true">
-      <span class="divider-line"></span>
-      <span class="divider-lotus">
-        <svg width="26" height="26" viewBox="0 0 64 64">
-          <defs>
-            <linearGradient id="lg7" x1="0" y1="0" x2="1" y2="1">
-              <stop offset="0" stop-color="#46018A"/>
-              <stop offset="1" stop-color="#DAB000"/>
-            </linearGradient>
-          </defs>
-          <path d="M32 14c-5 7-8 13-8 18 0 6 4 10 8 10s8-4 8-10c0-5-3-11-8-18z" fill="url(#lg7)"/>
-          <path d="M18 36c4 10 11 16 14 16-6-5-10-10-14-16z" fill="rgba(70,1,138,.45)"/>
-          <path d="M46 36c-4 6-8 11-14 16 3 0 10-6 14-16z" fill="rgba(218,176,0,.45)"/>
-        </svg>
-      </span>
-      <span class="divider-line"></span>
+      <div class="hero-right">
+        <div class="card">
+          <div class="card-top">
+            <div class="drop-icon" aria-hidden="true"></div>
+            <div class="card-meta">
+              <span class="card-title">WEDDING CELEBRATION</span>
+              <span class="card-date">14 • 02 • 2026</span>
+            </div>
+          </div>
+
+          <div class="glance">
+            <h3>At a glance</h3>
+
+            <div class="glance-row">
+              <span class="label">Our special day begins</span>
+              <span class="value">10.00 a.m.</span>
+            </div>
+
+            <div class="glance-row">
+              <span class="label">Poruwa Ceremony</span>
+              <span class="value">10.30 a.m.</span>
+            </div>
+
+            <div class="glance-row">
+              <span class="label">Reception</span>
+              <span class="value">11.00 a.m. onwards</span>
+            </div>
+
+            <div class="glance-row">
+              <span class="label">Dress Code</span>
+              <span class="value">Traditional / party wear — any attire is welcome, we would love to see you shining.</span>
+            </div>
+
+            <div class="glance-note">
+              In keeping with our traditions, alcohol will not be served.
+            </div>
+
+            <div class="glance-actions">
+              <a class="btn btn-primary" href="#seating">Seating Chart</a>
+              <a class="btn btn-ghost" href="#moments">Share Photos</a>
+            </div>
+          </div>
+
+          <div class="quote">
+            <p>“A celebration of love and passion — with the amazing souls who shaped us.”</p>
+            <div class="quote-sig">— Saumi and Pasan —</div>
+          </div>
+        </div>
+      </div>
     </div>
+  </section>
 
-    <!-- FAQ -->
-    <section class="section" id="faq">
-      <div class="container">
-        <header class="section-header">
-          <h2>FAQ</h2>
-        </header>
+  <!-- Separator -->
+  <div class="separator" aria-hidden="true">
+    <span class="sep-line"></span>
+    <span class="sep-lotus"></span>
+    <span class="sep-line"></span>
+  </div>
 
-        <div class="faq">
-          <details class="faq-item">
-            <summary>What time should we arrive?</summary>
-            <p>
-              We would love if you could arrive a little early so you can settle in comfortably before the ceremony begins.
-            </p>
-          </details>
+  <!-- Seating Chart -->
+  <section id="seating" class="section">
+    <div class="container">
+      <div class="section-head">
+        <h2>Seating Chart</h2>
+        <p class="section-sub">
+          Please find your table below. Tap a chart to zoom.
+        </p>
+      </div>
 
-          <details class="faq-item">
-            <summary>Is there a dress code?</summary>
-            <p>
-              Any party attire is welcome, and we would love to see you shining!
-            </p>
-          </details>
+      <div class="seating-stack">
+        <figure class="seating-figure">
+          <figcaption class="seating-caption">Seating Chart 01</figcaption>
+          <img
+            class="zoomable"
+            src="assets/images/gallery/Seating%20Chart%20-%2001.jpg"
+            alt="Seating Chart 01"
+            loading="eager"
+          />
+        </figure>
 
-          <details class="faq-item">
-            <summary>Is alcohol served?</summary>
-            <p>
-              In keeping with our traditional values, alcohol will not be served.
-            </p>
-          </details>
+        <figure class="seating-figure">
+          <figcaption class="seating-caption">Seating Chart 02</figcaption>
+          <img
+            class="zoomable"
+            src="assets/images/gallery/Seating%20Chart%20-%2002.jpg"
+            alt="Seating Chart 02"
+            loading="lazy"
+          />
+        </figure>
+      </div>
 
-          <details class="faq-item">
-            <summary>How do I RSVP?</summary>
-            <p>
-              RSVP is regrets only. Please use the “RSVP – Regrets Only” button, or message Saumi or Pasan on WhatsApp.
-            </p>
-          </details>
+      <div class="hint">
+        Tip: If the text looks small, tap the chart and zoom in.
+      </div>
+    </div>
+  </section>
+
+  <!-- Separator -->
+  <div class="separator" aria-hidden="true">
+    <span class="sep-line"></span>
+    <span class="sep-lotus"></span>
+    <span class="sep-line"></span>
+  </div>
+
+  <!-- Share Moments -->
+  <section id="moments" class="section">
+    <div class="container">
+      <div class="section-head">
+        <h2>Share your moments with us</h2>
+        <p class="section-sub">
+          We’d love to relive the day through your photos. Please feel free to upload any candid moments you capture.
+        </p>
+      </div>
+
+      <div class="moments-card">
+        <div class="moments-left">
+          <div class="qr-box">
+            <img
+              src="assets/images/qr/google-photos-qr.png"
+              alt="QR code to upload photos"
+              loading="lazy"
+            />
+          </div>
+          <p class="qr-caption">Scan to open the shared album</p>
+        </div>
+
+        <div class="moments-right">
+          <div class="moments-actions">
+            <a
+              class="btn btn-primary"
+              href="https://photos.app.goo.gl/cTTzYDKCAf3r1W4i7"
+              target="_blank"
+              rel="noopener"
+            >
+              Upload Photos to Our Album
+            </a>
+
+            <a
+              class="btn btn-ghost"
+              href="https://photos.app.goo.gl/cTTzYDKCAf3r1W4i7"
+              target="_blank"
+              rel="noopener"
+            >
+              Open Album
+            </a>
+          </div>
+
+          <div class="moments-note">
+            <strong>Note:</strong> Google Photos may ask you to sign in to upload. Thank you for sharing your moments with us 💜
+          </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <footer class="footer">
-      <div class="container footer-inner">
-        <p>Saumi &amp; Pasan • 14 February 2026</p>
-        <a href="#top" class="footer-top">Back to top</a>
+  <!-- Separator -->
+  <div class="separator" aria-hidden="true">
+    <span class="sep-line"></span>
+    <span class="sep-lotus"></span>
+    <span class="sep-line"></span>
+  </div>
+
+  <!-- Events (keep if you want this on wedding day) -->
+  <section id="events" class="section">
+    <div class="container">
+      <div class="section-head">
+        <h2>Wedding Events</h2>
       </div>
-    </footer>
-  </main>
+
+      <div class="cards">
+        <article class="info-card">
+          <h3>Our Wedding Ceremony</h3>
+          <p class="muted">Starts at 10.00 a.m.</p>
+          <div class="tags">
+            <span class="tag">Traditional</span>
+            <span class="tag">Blessings</span>
+          </div>
+        </article>
+
+        <article class="info-card">
+          <h3>Poruwa Ceremony</h3>
+          <p class="muted">10.30 a.m.</p>
+          <div class="tags">
+            <span class="tag">Poruwa</span>
+            <span class="tag">Heritage</span>
+          </div>
+        </article>
+
+        <article class="info-card">
+          <h3>Wedding Reception</h3>
+          <p class="muted">11.00 a.m. onwards</p>
+          <div class="tags">
+            <span class="tag">Elegant</span>
+            <span class="tag">Welcoming</span>
+          </div>
+        </article>
+
+        <article class="info-card">
+          <h3>Lunch</h3>
+          <p class="muted">01.00 p.m.</p>
+          <div class="tags">
+            <span class="tag">Celebration</span>
+            <span class="tag">Togetherness</span>
+          </div>
+        </article>
+
+        <article class="info-card">
+          <h3>Going Away</h3>
+          <p class="muted">03.30 p.m.</p>
+          <div class="tags">
+            <span class="tag">Love</span>
+            <span class="tag">New Chapter</span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Separator -->
+  <div class="separator" aria-hidden="true">
+    <span class="sep-line"></span>
+    <span class="sep-lotus"></span>
+    <span class="sep-line"></span>
+  </div>
+
+  <!-- Venue -->
+  <section id="venue" class="section">
+    <div class="container">
+      <div class="section-head">
+        <h2>Venue</h2>
+      </div>
+
+      <div class="venue-card">
+        <div>
+          <h3>Vinrich Lake Resort — Lakewood Chateau</h3>
+          <p class="muted">
+            No 18/3, Duwawatta Road, Piliyandala 10300
+          </p>
+        </div>
+
+        <div class="venue-actions">
+          <a class="btn btn-primary" href="https://maps.app.goo.gl/bNsy69jnHx4APUuS9" target="_blank" rel="noopener">
+            Open Google Maps
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Separator -->
+  <div class="separator" aria-hidden="true">
+    <span class="sep-line"></span>
+    <span class="sep-lotus"></span>
+    <span class="sep-line"></span>
+  </div>
+
+  <!-- Gallery -->
+  <section id="gallery" class="section">
+    <div class="container">
+      <div class="section-head">
+        <h2>Gallery</h2>
+        <p class="section-sub">More beautiful moments will be updated here.</p>
+      </div>
+
+      <!-- Keep your existing gallery grid logic here if you already have it.
+           If not, this is a simple placeholder grid you can replace later. -->
+      <div class="gallery-grid">
+        <div class="gallery-tile muted-tile">Your photos will be showcased here after the celebration.</div>
+        <div class="gallery-tile muted-tile">Thank you for being part of our day 💛</div>
+        <div class="gallery-tile muted-tile">We can’t wait to share the highlights.</div>
+        <div class="gallery-tile muted-tile">— Saumi &amp; Pasan —</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Separator -->
+  <div class="separator" aria-hidden="true">
+    <span class="sep-line"></span>
+    <span class="sep-lotus"></span>
+    <span class="sep-line"></span>
+  </div>
+
+  <!-- Our Story -->
+  <section id="story" class="section">
+    <div class="container">
+      <div class="section-head">
+        <h2>Our Story</h2>
+      </div>
+
+      <div class="story-card">
+        <h3>How it began</h3>
+        <div class="story-text">
+          <p>
+            We met at university — Saumi was two years younger than me, and I was her senior. From the very first moments, we felt that quiet certainty that the other was someone special.
+          </p>
+          <p>
+            One evening, we shared pani poori — and even with a terrible cold, Saumi insisted on orange juice with a smile, saying, “It’s vitamin C… it’s good for us.” That night, when I dropped her off, she looked back with a longing glance — and I’m not sure I ever got my heart back after that.
+          </p>
+          <p>
+            After that came corridor glances, shy smiles, blushing, and long evening chats — and on the most beautiful day for lovers, the 14th of February, I held her hand, looked into her eyes, and asked if we could begin a journey together.
+          </p>
+          <p class="moment">
+            And… she said yes!
+          </p>
+          <p>
+            Years have passed since then — years filled with laughter, comfort, care, and a love that kept growing quietly, day by day. And today, we take the next step, hand in hand, with hearts full of gratitude.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Separator -->
+  <div class="separator" aria-hidden="true">
+    <span class="sep-line"></span>
+    <span class="sep-lotus"></span>
+    <span class="sep-line"></span>
+  </div>
+
+  <!-- FAQ -->
+  <section id="faq" class="section">
+    <div class="container">
+      <div class="section-head">
+        <h2>FAQ</h2>
+      </div>
+
+      <div class="faq">
+        <details class="faq-item">
+          <summary>What time should we arrive?</summary>
+          <p>We would love for you to arrive a little early so you can settle in comfortably before the ceremony begins.</p>
+        </details>
+
+        <details class="faq-item">
+          <summary>Is there a dress code?</summary>
+          <p>Traditional / party wear — any attire is welcome, and we would love to see you shining.</p>
+        </details>
+
+        <details class="faq-item">
+          <summary>Is alcohol served?</summary>
+          <p>In keeping with our traditional values, alcohol will not be served.</p>
+        </details>
+
+        <details class="faq-item">
+          <summary>How can I share photos?</summary>
+          <p>Please use the “Share Moments” section above to upload photos to our shared album.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>With love, Saumi &amp; Pasan 💜</p>
+    </div>
+  </footer>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lightbox-close" aria-label="Close">×</button>
+    <img id="lightbox-img" alt="Zoomed view" />
+  </div>
 
   <script src="script.js"></script>
 </body>
 </html>
-
