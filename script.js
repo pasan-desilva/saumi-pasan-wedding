@@ -1,64 +1,68 @@
-(function () {
-  // Mobile nav toggle
-  const toggle = document.querySelector(".nav-toggle");
-  const navMobile = document.querySelector(".nav-mobile");
+// --- Mobile nav toggle ---
+const navToggle = document.getElementById("navToggle");
+const navMenu = document.getElementById("navMenu");
 
-  if (toggle && navMobile) {
-    toggle.addEventListener("click", () => {
-      const isOpen = navMobile.classList.toggle("open");
-      toggle.setAttribute("aria-expanded", String(isOpen));
-    });
-
-    // Close menu when clicking a link
-    navMobile.querySelectorAll("a").forEach((a) => {
-      a.addEventListener("click", () => {
-        navMobile.classList.remove("open");
-        toggle.setAttribute("aria-expanded", "false");
-      });
-    });
-  }
-
-  // Lightbox for seating charts
-  const lightbox = document.getElementById("lightbox");
-  const lightboxImg = document.getElementById("lightbox-img");
-  const closeBtn = document.querySelector(".lightbox-close");
-
-  function openLightbox(src, alt) {
-    if (!lightbox || !lightboxImg) return;
-    lightboxImg.src = src;
-    lightboxImg.alt = alt || "Zoomed image";
-    lightbox.classList.add("open");
-    lightbox.setAttribute("aria-hidden", "false");
-    document.body.style.overflow = "hidden";
-  }
-
-  function closeLightbox() {
-    if (!lightbox || !lightboxImg) return;
-    lightbox.classList.remove("open");
-    lightbox.setAttribute("aria-hidden", "true");
-    lightboxImg.src = "";
-    document.body.style.overflow = "";
-  }
-
-  document.querySelectorAll("img.zoomable").forEach((img) => {
-    img.addEventListener("click", () => {
-      openLightbox(img.src, img.alt);
-    });
+if (navToggle && navMenu) {
+  navToggle.addEventListener("click", () => {
+    const isOpen = document.body.classList.toggle("nav-open");
+    navToggle.setAttribute("aria-expanded", String(isOpen));
   });
 
-  if (closeBtn) closeBtn.addEventListener("click", closeLightbox);
-
-  if (lightbox) {
-    lightbox.addEventListener("click", (e) => {
-      // Close when clicking outside image
-      if (e.target === lightbox || e.target === lightboxImg) {
-        closeLightbox();
-      }
+  // Close menu after click
+  navMenu.querySelectorAll("a").forEach(a => {
+    a.addEventListener("click", () => {
+      document.body.classList.remove("nav-open");
+      navToggle.setAttribute("aria-expanded", "false");
     });
+  });
+}
+
+// --- Smooth scroll for hero buttons ---
+document.querySelectorAll("[data-scroll]").forEach(btn => {
+  btn.addEventListener("click", () => {
+    const target = btn.getAttribute("data-scroll");
+    const el = document.querySelector(target);
+    if (!el) return;
+
+    const headerOffset = 74; // sticky header height
+    const top = el.getBoundingClientRect().top + window.pageYOffset - headerOffset;
+
+    window.scrollTo({ top, behavior: "smooth" });
+  });
+});
+
+// --- Countdown (shows days, hours, minutes, seconds) ---
+const countdownEl = document.getElementById("countdown");
+
+// Set date: 14 Feb 2026 10:00 AM Sri Lanka time (UTC+5:30)
+// We use local time in browser; it’s fine since it’s informational.
+const weddingDate = new Date("2026-02-14T10:00:00+05:30");
+
+function pad2(n) {
+  return String(n).padStart(2, "0");
+}
+
+function updateCountdown() {
+  if (!countdownEl) return;
+
+  const now = new Date();
+  const diff = weddingDate - now;
+
+  if (diff <= 0) {
+    countdownEl.textContent = "Today 💜";
+    return;
   }
 
-  document.addEventListener("keydown", (e) => {
-    if (e.key === "Escape") closeLightbox();
-  });
-})();
+  const totalSeconds = Math.floor(diff / 1000);
+
+  const days = Math.floor(totalSeconds / (3600 * 24));
+  const hours = Math.floor((totalSeconds % (3600 * 24)) / 3600);
+  const minutes = Math.floor((totalSeconds % 3600) / 60);
+  const seconds = totalSeconds % 60;
+
+  countdownEl.textContent = `${days}d • ${pad2(hours)}h • ${pad2(minutes)}m • ${pad2(seconds)}s`;
+}
+
+updateCountdown();
+setInterval(updateCountdown, 1000);
 
