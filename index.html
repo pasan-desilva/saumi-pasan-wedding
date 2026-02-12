@@ -3,54 +3,56 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Saumi & Pasan | Wedding</title>
+  <title>Saumi & Pasan — Wedding Celebration</title>
 
-  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&family=Great+Vibes&display=swap" rel="stylesheet">
+
+  <!-- Aristocratic / regal -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
-  <!-- Top Navigation -->
-  <header class="site-header" id="top">
-    <div class="nav-wrap">
-      <a class="brand" href="#top" aria-label="Go to top">
-        <span class="brand-mark" aria-hidden="true"></span>
-        <span class="brand-text">Saumi &amp; Pasan</span>
+  <!-- Top Nav -->
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <a class="brand" href="#top" aria-label="Saumi & Pasan home">
+        <img class="brand-mark" src="assets/images/lotus/lotus-mark.png" alt="Lotus mark" onerror="this.style.display='none'">
+        <span class="brand-name">Saumi &amp; Pasan</span>
       </a>
 
-      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
 
-      <nav class="nav" id="navMenu">
+      <nav class="nav" aria-label="Primary navigation">
         <a href="#events">Events</a>
         <a href="#venue">Venue</a>
-        <a href="#seating-chart">Seating Chart</a>
-        <a href="#share-photos">Share Photos</a>
+        <a href="#seating">Seating Chart</a>
+        <a href="#share">Share Photos</a>
         <a href="#gallery">Gallery</a>
+        <a href="#faq">FAQ</a>
       </nav>
     </div>
   </header>
 
-  <!-- HERO -->
-  <main>
-    <section class="hero" id="hero">
+  <!-- Hero -->
+  <main id="top">
+    <section class="hero">
       <div class="container hero-grid">
         <!-- Left -->
         <div class="hero-left">
-          <div class="hero-kicker">WITH THE LOVE &amp; BLESSINGS OF OUR PARENTS</div>
+          <p class="hero-kicker">WITH THE LOVE &amp; BLESSINGS OF OUR PARENTS</p>
 
           <h1 class="hero-title">
-            <span class="hero-name hero-name--purple">Saumi</span>
+            <span class="hero-title-purple">Saumi</span>
             <span class="hero-amp">&amp;</span>
-            <span class="hero-name hero-name--dark">Pasan</span>
+            <span class="hero-title-black">Pasan</span>
           </h1>
 
-          <p class="hero-subtitle">
+          <p class="hero-sub">
             Today, we celebrate love, laughter, and the beginning of our forever.
           </p>
 
@@ -66,255 +68,218 @@
           </div>
 
           <div class="hero-actions">
-            <button class="btn btn-outline" data-scroll="#seating-chart">View Seating Chart</button>
-            <button class="btn btn-outline" data-scroll="#share-photos">Upload Photos</button>
-            <a class="btn btn-outline" href="https://maps.app.goo.gl/bNsy69jnHx4APUuS9" target="_blank" rel="noopener">Open Google Maps</a>
+            <a class="btn btn-outline" href="#seating">View Seating Chart</a>
+            <a class="btn btn-outline" href="#share">Upload Photos</a>
+            <a class="btn btn-outline" href="#venue">Open Google Maps</a>
           </div>
         </div>
 
-        <!-- Right Card -->
-        <aside class="hero-right">
-          <div class="card">
-            <div class="card-top">
-              <div class="card-dot" aria-hidden="true"></div>
-              <div class="card-top-left">
-                <div class="card-eyebrow">WEDDING CELEBRATION</div>
-              </div>
-              <div class="card-top-right">14 • 02 • 2026</div>
+        <!-- Right -->
+        <aside class="hero-right card">
+          <div class="card-head">
+            <div class="card-dot"></div>
+            <div class="card-head-left">
+              <p class="card-eyebrow">WEDDING CELEBRATION</p>
             </div>
+            <div class="card-date">14 • 02 • 2026</div>
+          </div>
 
-            <div class="card-body">
-              <h2 class="card-title">At a glance</h2>
+          <h2 class="card-title">At a glance</h2>
 
-              <div class="glance">
-                <div class="glance-row">
-                  <div class="glance-key">Our special day begins</div>
-                  <div class="glance-val">10.00 a.m.</div>
-                </div>
-                <div class="glance-row">
-                  <div class="glance-key">Poruwa Ceremony</div>
-                  <div class="glance-val">10.30 a.m.</div>
-                </div>
-                <div class="glance-row">
-                  <div class="glance-key">Reception</div>
-                  <div class="glance-val">11.00 a.m. onwards</div>
-                </div>
-                <div class="glance-row">
-                  <div class="glance-key">Dress Code</div>
-                  <div class="glance-val">
-                    Traditional / party wear — any attire is welcome; we’d love to see you shining.
-                  </div>
-                </div>
-              </div>
-
-              <div class="note">
-                In keeping with our traditions, alcohol will not be served.
-              </div>
-
-              <div class="quote">
-                <p>“A celebration of love and passion — with the amazing souls who shaped us.”</p>
-                <div class="quote-sig">— Saumi and Pasan —</div>
-              </div>
+          <div class="glance">
+            <div class="glance-row">
+              <span class="glance-key">Our special day begins</span>
+              <span class="glance-val">10.00 a.m.</span>
+            </div>
+            <div class="glance-row">
+              <span class="glance-key">Poruwa Ceremony</span>
+              <span class="glance-val">10.30 a.m.</span>
+            </div>
+            <div class="glance-row">
+              <span class="glance-key">Reception</span>
+              <span class="glance-val">11.00 a.m. onwards</span>
+            </div>
+            <div class="glance-row">
+              <span class="glance-key">Dress Code</span>
+              <span class="glance-val">Traditional / party wear — any attire is welcome; we’d love to see you shining.</span>
             </div>
           </div>
 
-          <div class="countdown-wrap">
-            <div class="countdown-label">COUNTDOWN</div>
-            <div class="countdown" id="countdown">—</div>
+          <div class="gentle-note">
+            In keeping with our traditions, alcohol will not be served.
+          </div>
+
+          <div class="quote">
+            <p>“A celebration of love and passion — with the amazing souls who shaped us.”</p>
+            <p class="quote-sign">— Saumi and Pasan —</p>
           </div>
         </aside>
       </div>
 
-      <div class="divider">
-        <div class="divider-line"></div>
-        <div class="divider-lotus" aria-hidden="true">
-          <!-- Lotus SVG (keeps your elegant divider feel) -->
-          <svg viewBox="0 0 120 40" width="120" height="40" role="presentation">
-            <defs>
-              <linearGradient id="lg" x1="0" y1="0" x2="1" y2="0">
-                <stop offset="0%" stop-color="#46018A"/>
-                <stop offset="50%" stop-color="#DAB000"/>
-                <stop offset="100%" stop-color="#46018A"/>
-              </linearGradient>
-            </defs>
-            <path fill="url(#lg)" d="M60 34c-10-6-16-12-18-18 6 2 10 5 12 8-1-7 2-13 6-18 4 5 7 11 6 18 2-3 6-6 12-8-2 6-8 12-18 18z"/>
-            <circle cx="60" cy="20" r="3" fill="#DAB000"/>
-          </svg>
+      <div class="container">
+        <div class="section-sep" aria-hidden="true">
+          <span class="line"></span>
+          <span class="lotus-pill"></span>
+          <span class="line"></span>
         </div>
-        <div class="divider-line"></div>
       </div>
     </section>
 
-    <!-- EVENTS -->
-    <section class="section" id="events">
+    <!-- Our Story (RESTORED) -->
+    <section id="story" class="section">
+      <div class="container">
+        <h2 class="section-title">Our Story</h2>
+
+        <div class="story card">
+          <h3 class="story-title">How it began</h3>
+          <div class="story-body">
+            <p>
+              We met at university — Saumi was two years younger than me, and I was her senior.
+              From the very first day, something felt different… like we’d found someone special.
+            </p>
+            <p>
+              Our first little moments still make us smile — pani poori, evening chats, shy glances in the corridor,
+              and that quiet feeling of “this might be it.”
+            </p>
+            <p class="story-highlight">
+              And then… she said yes.
+            </p>
+            <p>
+              Years have passed since then — years filled with laughter, warmth, and a love that grew steadier with time.
+              Today, we’re stepping into our next chapter with full hearts, grateful for everyone who shaped us into who we are.
+            </p>
+          </div>
+        </div>
+
+        <div class="section-sep" aria-hidden="true">
+          <span class="line"></span>
+          <span class="lotus-pill"></span>
+          <span class="line"></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Events -->
+    <section id="events" class="section">
       <div class="container">
         <h2 class="section-title">Wedding Events</h2>
 
-        <div class="event-grid">
-          <div class="event-card">
-            <div class="event-title">Our Wedding Ceremony</div>
-            <div class="event-time">Starts at 10.00 a.m.</div>
-            <div class="tags">
-              <span class="tag">Traditional</span>
-              <span class="tag">Blessings</span>
+        <div class="grid-cards">
+          <article class="event card">
+            <h3>Our Wedding Ceremony</h3>
+            <p class="event-time">Starts at 10.00 a.m.</p>
+            <div class="chips">
+              <span class="chip">Traditional</span>
+              <span class="chip">Blessings</span>
             </div>
-          </div>
+          </article>
 
-          <div class="event-card">
-            <div class="event-title">Poruwa Ceremony</div>
-            <div class="event-time">10.30 a.m.</div>
-            <div class="tags">
-              <span class="tag">Poruwa</span>
-              <span class="tag">Heritage</span>
+          <article class="event card">
+            <h3>Poruwa Ceremony</h3>
+            <p class="event-time">10.30 a.m.</p>
+            <div class="chips">
+              <span class="chip">Poruwa</span>
+              <span class="chip">Heritage</span>
             </div>
-          </div>
+          </article>
 
-          <div class="event-card">
-            <div class="event-title">Wedding Reception</div>
-            <div class="event-time">11.00 a.m. onwards</div>
-            <div class="tags">
-              <span class="tag">Elegant</span>
-              <span class="tag">Welcoming</span>
+          <article class="event card">
+            <h3>Wedding Reception</h3>
+            <p class="event-time">11.00 a.m. onwards</p>
+            <div class="chips">
+              <span class="chip">Elegant</span>
+              <span class="chip">Welcoming</span>
             </div>
-          </div>
+          </article>
 
-          <div class="event-card">
-            <div class="event-title">Lunch</div>
-            <div class="event-time">12.30 p.m.</div>
-            <div class="tags">
-              <span class="tag">Celebration</span>
-              <span class="tag">Togetherness</span>
+          <article class="event card">
+            <h3>Lunch</h3>
+            <p class="event-time">12.30 p.m.</p>
+            <div class="chips">
+              <span class="chip">Celebration</span>
+              <span class="chip">Togetherness</span>
             </div>
-          </div>
+          </article>
 
-          <div class="event-card">
-            <div class="event-title">Going Away</div>
-            <div class="event-time">03.30 p.m.</div>
-            <div class="tags">
-              <span class="tag">Love</span>
-              <span class="tag">New Chapter</span>
+          <article class="event card">
+            <h3>Going Away</h3>
+            <p class="event-time">03.30 p.m.</p>
+            <div class="chips">
+              <span class="chip">Love</span>
+              <span class="chip">New Chapter</span>
             </div>
-          </div>
+          </article>
         </div>
-      </div>
 
-      <div class="divider divider--compact">
-        <div class="divider-line"></div>
-        <div class="divider-lotus" aria-hidden="true">
-          <svg viewBox="0 0 120 40" width="120" height="40" role="presentation">
-            <defs>
-              <linearGradient id="lg2" x1="0" y1="0" x2="1" y2="0">
-                <stop offset="0%" stop-color="#46018A"/>
-                <stop offset="50%" stop-color="#DAB000"/>
-                <stop offset="100%" stop-color="#46018A"/>
-              </linearGradient>
-            </defs>
-            <path fill="url(#lg2)" d="M60 34c-10-6-16-12-18-18 6 2 10 5 12 8-1-7 2-13 6-18 4 5 7 11 6 18 2-3 6-6 12-8-2 6-8 12-18 18z"/>
-            <circle cx="60" cy="20" r="3" fill="#DAB000"/>
-          </svg>
+        <div class="section-sep" aria-hidden="true">
+          <span class="line"></span>
+          <span class="lotus-pill"></span>
+          <span class="line"></span>
         </div>
-        <div class="divider-line"></div>
       </div>
     </section>
 
-    <!-- VENUE -->
-    <section class="section" id="venue">
+    <!-- Venue -->
+    <section id="venue" class="section">
       <div class="container">
         <h2 class="section-title">Venue</h2>
 
-        <div class="venue-card">
-          <div class="venue-left">
-            <div class="venue-name">Vinrich Lake Resort — Lakewood Chateau</div>
-            <div class="venue-address">No 18/3, Duwawatta Road, Piliyandala 10300</div>
-          </div>
-          <div class="venue-right">
+        <div class="venue card">
+          <div class="venue-top">
+            <div>
+              <h3 class="venue-name">Vinrich Lake Resort — Lakewood Chateau</h3>
+              <p class="venue-address">No 18/3, Duwawatta Road, Piliyandala 10300</p>
+            </div>
             <a class="btn btn-solid" href="https://maps.app.goo.gl/bNsy69jnHx4APUuS9" target="_blank" rel="noopener">Open Google Maps</a>
           </div>
+
+          <!-- Interactive map (inside website) -->
+          <div class="map-wrap">
+            <iframe
+              title="Vinrich Lake Resort — Lakewood Chateau"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              src="https://www.google.com/maps?q=Vinrich%20Lake%20Resort%20Lakewood%20Chateau%20No%2018%2F3%20Duwawatta%20Road%20Piliyandala%2010300&output=embed">
+            </iframe>
+          </div>
         </div>
 
-        <!-- Interactive map embed -->
-        <div class="map-embed" aria-label="Google map embed">
-          <iframe
-            title="Vinrich Lake Resort — Lakewood Chateau map"
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-            src="https://www.google.com/maps?q=Vinrich%20Lake%20Resort%20Lakewood%20Chateau%20No%2018%2F3%20Duwawatta%20Road%20Piliyandala%2010300&output=embed">
-          </iframe>
+        <div class="section-sep" aria-hidden="true">
+          <span class="line"></span>
+          <span class="lotus-pill"></span>
+          <span class="line"></span>
         </div>
-      </div>
-
-      <div class="divider divider--compact">
-        <div class="divider-line"></div>
-        <div class="divider-lotus" aria-hidden="true">
-          <svg viewBox="0 0 120 40" width="120" height="40" role="presentation">
-            <defs>
-              <linearGradient id="lg3" x1="0" y1="0" x2="1" y2="0">
-                <stop offset="0%" stop-color="#46018A"/>
-                <stop offset="50%" stop-color="#DAB000"/>
-                <stop offset="100%" stop-color="#46018A"/>
-              </linearGradient>
-            </defs>
-            <path fill="url(#lg3)" d="M60 34c-10-6-16-12-18-18 6 2 10 5 12 8-1-7 2-13 6-18 4 5 7 11 6 18 2-3 6-6 12-8-2 6-8 12-18 18z"/>
-            <circle cx="60" cy="20" r="3" fill="#DAB000"/>
-          </svg>
-        </div>
-        <div class="divider-line"></div>
       </div>
     </section>
 
-    <!-- SEATING CHART -->
-    <section class="section" id="seating-chart">
+    <!-- Seating Chart -->
+    <section id="seating" class="section">
       <div class="container">
         <h2 class="section-title">Seating Chart</h2>
 
-        <div class="seating-wrap">
-          <figure class="seating-figure">
-            <img
-              src=" assets/images/gallery/seating-chart-01.jpg"
-              alt="Seating chart 01"
-              loading="lazy"
-            />
-          </figure>
-
-          <figure class="seating-figure">
-            <img
-              src="assets/images/gallery/seating-chart-02.jpg"
-              alt="Seating chart 02"
-              loading="lazy"
-            />
-          </figure>
+        <div class="seating card">
+          <img class="seating-img" src="assets/images/gallery/seating-chart-01.jpg" alt="Seating chart 1" loading="lazy" />
+          <img class="seating-img" src="assets/images/gallery/seating-chart-02.jpg" alt="Seating chart 2" loading="lazy" />
         </div>
-      </div>
 
-      <div class="divider divider--compact">
-        <div class="divider-line"></div>
-        <div class="divider-lotus" aria-hidden="true">
-          <svg viewBox="0 0 120 40" width="120" height="40" role="presentation">
-            <defs>
-              <linearGradient id="lg4" x1="0" y1="0" x2="1" y2="0">
-                <stop offset="0%" stop-color="#46018A"/>
-                <stop offset="50%" stop-color="#DAB000"/>
-                <stop offset="100%" stop-color="#46018A"/>
-              </linearGradient>
-            </defs>
-            <path fill="url(#lg4)" d="M60 34c-10-6-16-12-18-18 6 2 10 5 12 8-1-7 2-13 6-18 4 5 7 11 6 18 2-3 6-6 12-8-2 6-8 12-18 18z"/>
-            <circle cx="60" cy="20" r="3" fill="#DAB000"/>
-          </svg>
+        <div class="section-sep" aria-hidden="true">
+          <span class="line"></span>
+          <span class="lotus-pill"></span>
+          <span class="line"></span>
         </div>
-        <div class="divider-line"></div>
       </div>
     </section>
 
-    <!-- SHARE PHOTOS -->
-    <section class="section" id="share-photos">
+    <!-- Share Photos -->
+    <section id="share" class="section">
       <div class="container">
         <h2 class="section-title">Share your moments with us</h2>
-        <p class="section-subtitle">
+        <p class="section-sub">
           We’d love to relive the day through your photos. Please feel free to upload any candid moments you capture.
         </p>
 
-        <div class="moments-card">
-          <div class="moments-left">
+        <div class="moments card">
+          <div class="moments-grid">
             <div class="qr-box">
               <img
                 class="qr-img"
@@ -322,95 +287,106 @@
                 alt="QR code to upload photos"
                 loading="lazy"
               />
+              <p class="qr-caption">Scan to open the shared album</p>
             </div>
-            <div class="qr-caption">Scan to open the shared album</div>
-          </div>
 
-          <div class="moments-right">
-            <div class="moments-actions">
-              <a class="btn btn-solid" href="https://photos.app.goo.gl/cTTzYDKCAf3r1W4i7" target="_blank" rel="noopener">
+            <div class="moments-right">
+              <a class="btn btn-solid btn-wide" href="https://photos.app.goo.gl/cTTzYDKCAf3r1W4i7" target="_blank" rel="noopener">
                 Upload Photos to Our Album
               </a>
-            </div>
 
-            <div class="moments-note">
-              Note: Google Photos may ask you to sign in to upload. Thank you for sharing your moments with us 💜
+              <div class="note">
+                Note: Google Photos may ask you to sign in to upload. Thank you for sharing your moments with us 💜
+              </div>
             </div>
           </div>
         </div>
-      </div>
 
-      <div class="divider divider--compact">
-        <div class="divider-line"></div>
-        <div class="divider-lotus" aria-hidden="true">
-          <svg viewBox="0 0 120 40" width="120" height="40" role="presentation">
-            <defs>
-              <linearGradient id="lg5" x1="0" y1="0" x2="1" y2="0">
-                <stop offset="0%" stop-color="#46018A"/>
-                <stop offset="50%" stop-color="#DAB000"/>
-                <stop offset="100%" stop-color="#46018A"/>
-              </linearGradient>
-            </defs>
-            <path fill="url(#lg5)" d="M60 34c-10-6-16-12-18-18 6 2 10 5 12 8-1-7 2-13 6-18 4 5 7 11 6 18 2-3 6-6 12-8-2 6-8 12-18 18z"/>
-            <circle cx="60" cy="20" r="3" fill="#DAB000"/>
-          </svg>
+        <div class="section-sep" aria-hidden="true">
+          <span class="line"></span>
+          <span class="lotus-pill"></span>
+          <span class="line"></span>
         </div>
-        <div class="divider-line"></div>
       </div>
     </section>
 
-    <!-- GALLERY -->
-    <section class="section" id="gallery">
+    <!-- Gallery -->
+    <section id="gallery" class="section">
       <div class="container">
         <h2 class="section-title">Gallery</h2>
-        <p class="section-subtitle">
-          More beautiful moments from our wedding will be lovingly added here.
-        </p>
+        <p class="section-sub">More beautiful moments from our wedding will be lovingly added here.</p>
 
         <div class="gallery-grid">
-          <figure class="gallery-item">
-            <img src="assets/images/gallery/DSC06461.JPG" alt="Wedding moment 1" loading="lazy" />
+          <!-- IMPORTANT: these are your GitHub paths exactly as shown -->
+          <figure class="gallery-card">
+            <img src="assets/images/gallery/DSC06461.JPG" alt="Gallery photo 1" loading="lazy" />
           </figure>
-          <figure class="gallery-item">
-            <img src="assets/images/gallery/DSC06689-2.JPG" alt="Wedding moment 2" loading="lazy" />
+          <figure class="gallery-card">
+            <img src="assets/images/gallery/DSC06689-2.JPG" alt="Gallery photo 2" loading="lazy" />
           </figure>
-          <figure class="gallery-item">
-            <img src="assets/images/gallery/DSC06774-2.JPG" alt="Wedding moment 3" loading="lazy" />
+          <figure class="gallery-card">
+            <img src="assets/images/gallery/DSC06774-2.JPG" alt="Gallery photo 3" loading="lazy" />
           </figure>
-          <figure class="gallery-item">
-            <img src="assets/images/gallery/DSC06997-2.JPG" alt="Wedding moment 4" loading="lazy" />
+          <figure class="gallery-card">
+            <img src="assets/images/gallery/DSC06997-2.JPG" alt="Gallery photo 4" loading="lazy" />
           </figure>
         </div>
-      </div>
 
-      <div class="divider divider--compact">
-        <div class="divider-line"></div>
-        <div class="divider-lotus" aria-hidden="true">
-          <svg viewBox="0 0 120 40" width="120" height="40" role="presentation">
-            <defs>
-              <linearGradient id="lg6" x1="0" y1="0" x2="1" y2="0">
-                <stop offset="0%" stop-color="#46018A"/>
-                <stop offset="50%" stop-color="#DAB000"/>
-                <stop offset="100%" stop-color="#46018A"/>
-              </linearGradient>
-            </defs>
-            <path fill="url(#lg6)" d="M60 34c-10-6-16-12-18-18 6 2 10 5 12 8-1-7 2-13 6-18 4 5 7 11 6 18 2-3 6-6 12-8-2 6-8 12-18 18z"/>
-            <circle cx="60" cy="20" r="3" fill="#DAB000"/>
-          </svg>
+        <div class="section-sep" aria-hidden="true">
+          <span class="line"></span>
+          <span class="lotus-pill"></span>
+          <span class="line"></span>
         </div>
-        <div class="divider-line"></div>
       </div>
     </section>
 
-    <footer class="footer">
-      <div class="container footer-inner">
-        <div class="footer-mark">Saumi &amp; Pasan</div>
-        <div class="footer-note">With love and gratitude 💜💛</div>
+    <!-- FAQ (RESTORED) -->
+    <section id="faq" class="section">
+      <div class="container">
+        <h2 class="section-title">FAQ</h2>
+
+        <div class="faq card">
+          <button class="faq-q" aria-expanded="false">
+            What time should we arrive?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-a">
+            We’d love to have you a little early so you can settle in comfortably before the events begin.
+          </div>
+
+          <button class="faq-q" aria-expanded="false">
+            Is there a dress code?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-a">
+            Traditional / party wear — any attire is welcome; we’d love to see you shining.
+          </div>
+
+          <button class="faq-q" aria-expanded="false">
+            Is alcohol served?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-a">
+            In keeping with our traditional values, alcohol will not be served.
+          </div>
+
+          <button class="faq-q" aria-expanded="false">
+            How do I share photos?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-a">
+            Please use the “Upload Photos to Our Album” button (or scan the QR code) in the Share Photos section.
+          </div>
+        </div>
+
+        <footer class="footer">
+          <p>Thank you for being part of our day 💛</p>
+          <p class="footer-sign">— Saumi &amp; Pasan —</p>
+        </footer>
       </div>
-    </footer>
+    </section>
   </main>
 
   <script src="script.js"></script>
 </body>
 </html>
-
